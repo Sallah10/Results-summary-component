@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+      url(assets/fonts/static/HankenGrotesk-Bold.ttf),
+      url(assets/fonts/static/HankenGrotesk-ExtraBold.ttf),
+      url(assets/fonts/static/HankenGrotesk-Medium.ttf),
+      url(assets/fonts/HankenGrotesk-VariableFont_wght.ttf),
+  }
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-primary-red: hsl(0, 100%, 67%);
+    --color-primary-orangeYellow: hsl(39, 100%, 56%);
+    --color-primary-greenTeal: hsl(166, 100%, 37%);
+    --color-primary-cobalt-blue: hsl(234, 85%, 45%);
+    --color-bg-slate: hsl(252, 100%, 67%);
+    --color-bg-royal: hsl(241, 81%, 54%);
+    --color-circle-violet: hsla(256, 72%, 46%, 1);
+    --color-circle-persian: hsla(241, 72%, 46%, 0);
+}
+body{
+    background-color: hsla(0, 0%, 100%);
+}
+main{
+    max-width: 300px;
+    width: 100%;
+    margin: 30px auto;
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(5, 1fr);
+    /* grid-auto-rows: auto; */
+    grid-gap: 0rem;
+}
+/* First card  */
+.first-card{
+    width: 100%;
+    /* margin: 30px auto; */
+    border-radius: 15px; 
+    background-color: var(--color-bg-slate);
+    padding-left: 80px;
+    padding-right:  80px;
+   
+    /* height: 100%; */
+    /* width: 100%;
+    border-radius: 20px;
+     */
+}
+.first-card >p{
+    font-family: 'Open Sans';
+    margin: 30px 0 ;
+    margin-left: 15px;
+    color: antiquewhite;
+    
+}
+.result{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: -12px;
+    border-radius: 100% ;
+    padding: 30px;
+    width: 150px;
+    height: 150px;
+    color: antiquewhite;
+    background-color: var(--color-circle-violet);
+    font-family: 'Open Sans';
+
+}
+.result span{
+    color: hsl(0, 0%, 100%);
+    font-size: 50px;
+    font-family: 'Open Sans';
+}
+figcaption h1{
+    color: hsl(0, 0%, 100%);
+    margin: 20px 30px;
+    font-family: 'Open Sans';
+}
+figcaption p{
+    font-family: 'Open Sans';
+    color: antiquewhite;
+    margin: 30px -50px;
+    padding-left: 20px;
+    /* margin-left: -1px; */
+    margin-top: -7px; 
+    /* font-size: 18px; */
+    /* font-weight: 500; */
+}
+figcaption p span{
+    margin-left: 10px;
+}
+figcaption p .second-span{
+    margin-left: 65px;
+}
+/* Second card  */
+
+button{
+    margin-left: 70px;
+    padding: 5px 10px;
+    border-radius: 40px;
+    font-family: 'Open Sans';
+    background-color: var(--color-circle-persian);
+}
