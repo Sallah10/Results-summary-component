@@ -12,7 +12,7 @@
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    /* .attribution a { color: hsl(228, 45%, 44%); } */
   </style>
 </head>
 <body>
@@ -23,7 +23,7 @@
       <p>Your Result</p>
       <div class="result">
         <span>76</span>
-        <p>of 100</p>
+        <p class="denom">of 100</p>
       </div>
       
       <figcaption>
@@ -39,39 +39,39 @@
 
     <!-- second-card -->
     <div class="second-card">
-      <h2>Summary</h2>
-      <section>
+      <h1>Summary</h1>
+      <section class="components">
         
-        <div class="correction">
-          <div>
+        <div class="score-card score01">
+          <div class="scores">
             <img src="assets/images/icon-reaction.svg" alt="icon-reaction">
-            Reaction 
+            <span class="topic01">Reaction</span> 
           </div>
-          <div>80 / 100</div>
+          <p><b style="font-weight: 900;">80</b> <span class="denom">/100</span></p>
         </div>
         
-        <div>
-          <div>
+        <div class="score-card score02">
+          <div class="scores">
             <img src="assets/images/icon-memory.svg" alt="icon-memory">
-            Memory
+            <span class="topic02">Memory</span>
           </div>
-          <div>92 / 100</div>
+          <p><b style="font-weight: 900;">92 </b> <span class="denom">/100</span></p>
         </div>
         
-        <div>
-          <div>
+        <div class="score-card score03">
+          <div class="scores">
             <img src="assets/images/icon-verbal.svg" alt="icon-verbal">
-            Verbal
+            <span class="topic03">Verbal</span>
           </div>
-          <div>61 / 100</div>
+          <p><b style="font-weight: 900;">61</b> <span class="denom">/100</span></p>
         </div>
       
-        <div>
-          <div>
+        <div class="score-card score04">
+          <div class="scores">
             <img src="assets/images/icon-visual.svg" alt="icon-visual">
-            Visual
+            <span class="topic04">Visual</span>
           </div>
-          <div>72 / 100</div>
+          <p><b style="font-weight: 900;">72</b> <span class="denom">/100</span></p>
         </div>
         
       </section>

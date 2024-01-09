@@ -15,6 +15,8 @@
 }
 
 :root{
+    --Dark-gray-blue: hsl(224, 30%, 27%);   
+
     --color-primary-red: hsl(0, 100%, 67%);
     --color-primary-orangeYellow: hsl(39, 100%, 56%);
     --color-primary-greenTeal: hsl(166, 100%, 37%);
@@ -26,30 +28,51 @@
 }
 body{
     background-color: hsla(0, 0%, 100%);
+    /* display: grid; */
 }
+@media screen and (max-width: 660px) {
+    body {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+}
+
 main{
     max-width: 300px;
-    width: 100%;
-    margin: 30px auto;
+    width: 40rem;
+    margin: 50px 0;
+    margin-left: 26rem;
+    /* margin-right: 50px; */
     display: grid;
     grid-auto-rows: auto;
-    grid-template-columns: repeat(5, 1fr);
-    /* grid-auto-rows: auto; */
-    grid-gap: 0rem;
+    grid-template-columns: repeat(2, 1fr);
+    border-radius: 15px;
+    box-shadow: 0 0 12px var(--Dark-gray-blue);
+
 }
+@media screen and (max-width: 660px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        /* margin-right: 10px; */
+        width: 100%;
+        border-radius: 15px;
+        box-shadow: 0 0 12px var(--Dark-gray-blue);
+    }
+}
+
 /* First card  */
 .first-card{
     width: 100%;
-    /* margin: 30px auto; */
     border-radius: 15px; 
     background-color: var(--color-bg-slate);
     padding-left: 80px;
     padding-right:  80px;
-   
-    /* height: 100%; */
-    /* width: 100%;
-    border-radius: 20px;
-     */
 }
 .first-card >p{
     font-family: 'Open Sans';
@@ -88,10 +111,7 @@ figcaption p{
     color: antiquewhite;
     margin: 30px -50px;
     padding-left: 20px;
-    /* margin-left: -1px; */
     margin-top: -7px; 
-    /* font-size: 18px; */
-    /* font-weight: 500; */
 }
 figcaption p span{
     margin-left: 10px;
@@ -99,12 +119,101 @@ figcaption p span{
 figcaption p .second-span{
     margin-left: 65px;
 }
-/* Second card  */
 
+/* Second card  */
+.second-card{
+    margin-left: -10px;
+    width: 100%;
+    box-shadow: 0 0 12px var(--Dark-gray-blue);
+    clip-path: inset(-12px -12px -12px 0);
+    border-radius: 0 15px 15px 0;
+    padding: 1.5rem 5rem;
+    font-size: 12px;
+}
+.second-card h1{
+    font-family: 'Open Sans';
+    padding-top: .4rem;
+    font-weight: 400;
+
+}
+.components{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-direction: column;
+    margin-top: 1.5rem;
+}
+.score-card{
+    display: flex;
+    width: 100%;
+    gap: 40px;
+    /* justify-content: space-between; */
+    padding: 13px;
+    border-radius: 6px;
+    align-items: center;
+    font-weight: 900;
+}
+.score-card p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.scores{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.score01 {
+    background-color: hsla(0, 100%, 67%, 0.149);
+}
+.score02 {
+    background-color: hsla(39, 100%, 56%, 0.144);
+}
+.score03 {
+    background-color: hsla(166, 100%, 37%, 0.164);
+}
+.score04 {
+    background-color: hsla(234, 85%, 45%, 0.082);
+}
+.denom {
+    color: gray;
+}
+.topic01 {
+    color: var(--color-primary-red);
+}
+.topic02 {
+    color: var(--color-primary-orangeYellow);
+}
+.topic03 {
+    color: var(--color-primary-greenteal);
+}
+.topic04 {
+    color: var(--color-primary-cobalt-blue);
+}
 button{
-    margin-left: 70px;
-    padding: 5px 10px;
+    width: 100%;
+    margin-top: 2.5rem;
+    color: white;
+    border: none;
+    font-weight: bolder;
+    padding: 7px 10px;
     border-radius: 40px;
     font-family: 'Open Sans';
-    background-color: var(--color-circle-persian);
+    background-color: var(--Dark-gray-blue);
+}
+button:hover {
+    background: linear-gradient( to bottom, var(--color-bg-slate), var(--color-bg-royal));
+    cursor: pointer;
+}
+.attribution{
+    margin-right: -110px;
+    margin-top: 10px;
+    color:  rgb(109, 107, 143);
+    color: linear-gradient(69deg, rgba(2,0,36,1) 0%, rgba(67,9,121,1) 51%, rgba(0,212,255,1) 100%);
+}
+.attribution a{
+    color:  rgb(72, 65, 163);
+    color: linear-gradient(69deg, rgba(2,0,36,1) 0%, rgba(67,9,121,1) 51%, rgba(0,212,255,1) 100%);
 }
